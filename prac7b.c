@@ -81,3 +81,15 @@ int main() {
     return 0;
 }
 
+
+OUTPUT: 
+
+Shared memory created.
+Shared memory id: 3
+Shared memory attached at address: 0x74a221102000
+Enter the data: Hello World!
+Child: Shared memory attached at address: 0x74a2210c8000
+Child: Data read from shared memoгу: -1075053569
+Child: Shared memory successfully detached.
+Parent: Shared memory successfully detached.
+Parent: Shared memory segment removed.
