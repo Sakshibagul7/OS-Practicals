@@ -206,3 +206,76 @@ int CLOOK() {
     return 0;
 }
 
+OUTPUT :
+MENU ***********
+1:SSTF
+2:SCAN
+3:CLOOK
+4:EXIT
+Enter your choice: 1
+Enter the number of Requests
+6
+Enter the Requests sequence
+82
+56
+53
+24
+16
+78
+Enter initial head position
+48
+Total head movement is 108
+Do u want to continue IF YES PRESS 1
+IF NO PRESS 0: 1
+1:SSTF
+2:SCAN
+3:CLOOK
+4:EXIT
+Enter your choice: 2
+Enter the number of Requests
+6
+Enter the Requests sequence
+34
+78
+90
+32
+56
+64
+
+Enter initial head position
+50
+Enter total disk size
+3
+Enter the head movement direction for high 1 and for low @
+1
+Total head movement is 162
+Do u want to continue IF YES PRESS 1
+IF NO PRESS 0: 1
+MENU *****
+1:SSTF
+2:SCAN
+3:CLOOK
+4:EXIT
+Enter your choice: 3
+Enter the number of Requests
+5
+Enter the Requests sequence
+12
+56
+78
+96
+34
+Enter initial head position
+30
+Enter total disk size
+3
+Enter the head movement direction for high 1 and for low 6
+1
+Total head movement is 138
+Do u want to continue IF YES PRESS 1
+IF NO PRESS 6: 1
+1:SSTF
+2:SCAN
+3:CLOOK
+4: EXIT
+Enter your choice: 4
