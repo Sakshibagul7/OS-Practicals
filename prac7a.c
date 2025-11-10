@@ -32,3 +32,10 @@ close(fd2);
 unlink(myfifo2);
 return 0;
 } 
+
+
+OUTPUT :
+Enter a string 
+Introduction to OS #
+Contents of the file 
+ " hardware@hardware-HP-Pro-Tower-280-G9-PCI-Desktop-PC:~/Desktops " something like that 
