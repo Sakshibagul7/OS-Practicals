@@ -42,9 +42,7 @@ int main() {
     return 0;
 }
 
-//////////////////////////////////////////////
-// SSTF Algorithm
-//////////////////////////////////////////////
+
 int SSTF() {
     int RQ[100], n, TotalHeadMovement = 0, initial, count = 0;
 
@@ -60,7 +58,7 @@ int SSTF() {
     while (count != n) {
         int min = 1000, d, index = -1;
         for (int i = 0; i < n; i++) {
-            if (RQ[i] != 1000) {  // skip processed requests
+            if (RQ[i] != 1000) {  
                 d = abs(RQ[i] - initial);
                 if (min > d) {
                     min = d;
@@ -70,7 +68,7 @@ int SSTF() {
         }
         TotalHeadMovement += min;
         initial = RQ[index];
-        RQ[index] = 1000; // mark as processed
+        RQ[index] = 1000; 
         count++;
     }
 
@@ -78,9 +76,7 @@ int SSTF() {
     return 0;
 }
 
-//////////////////////////////////////////////
-// SCAN Algorithm
-//////////////////////////////////////////////
+
 int SCAN() {
     int RQ[100], n, TotalHeadMovement = 0, initial, size, move;
 
@@ -97,7 +93,7 @@ int SCAN() {
     printf("Enter the head movement direction (1 = high, 0 = low): ");
     scanf("%d", &move);
 
-    // Sort the request queue
+   
     for (int i = 0; i < n - 1; i++) {
         for (int j = 0; j < n - i - 1; j++) {
             if (RQ[j] > RQ[j + 1]) {
@@ -116,7 +112,7 @@ int SCAN() {
         }
     }
 
-    if (move == 1) {  // move towards high
+    if (move == 1) { 
         for (int i = index; i < n; i++) {
             TotalHeadMovement += abs(RQ[i] - initial);
             initial = RQ[i];
@@ -144,9 +140,8 @@ int SCAN() {
     return 0;
 }
 
-//////////////////////////////////////////////
-// C-LOOK Algorithm
-//////////////////////////////////////////////
+
+
 int CLOOK() {
     int RQ[100], n, TotalHeadMovement = 0, initial, size, move;
 
@@ -163,7 +158,6 @@ int CLOOK() {
     printf("Enter the head movement direction (1 = high, 0 = low): ");
     scanf("%d", &move);
 
-    // Sort the request queue
     for (int i = 0; i < n - 1; i++) {
         for (int j = 0; j < n - i - 1; j++) {
             if (RQ[j] > RQ[j + 1]) {
@@ -182,7 +176,7 @@ int CLOOK() {
         }
     }
 
-    if (move == 1) {  // move towards high
+    if (move == 1) {  
         for (int i = index; i < n; i++) {
             TotalHeadMovement += abs(RQ[i] - initial);
             initial = RQ[i];
@@ -191,7 +185,7 @@ int CLOOK() {
             TotalHeadMovement += abs(RQ[i] - initial);
             initial = RQ[i];
         }
-    } else {  // move towards low
+    } else {  
         for (int i = index - 1; i >= 0; i--) {
             TotalHeadMovement += abs(RQ[i] - initial);
             initial = RQ[i];
